@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo-Emprende INCES 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="inces-header">
+        <!-- Smoke bomb effect layers -->
+        <div class="smoke-bg smoke-1"></div>
+        <div class="smoke-bg smoke-2"></div>
+        <div class="smoke-bg smoke-3"></div>
+
+        <div class="header-content">
+            <div class="inces-logo-container">
+                <img src="inces_logo.png" alt="Logo INCES" class="inces-logo-img">
+            </div>
+            <h2>Feria de Emprendimientos</h2>
+            <p class="expo-year">Expo-Emprende 2026</p>
+        </div>
+    </header>
+
+    <main class="projects-container">
+
+        <!-- SECTION 1: ORION GRAVITY -->
+        <article class="card orion-gravity" id="orion-gravity" onclick="toggleCard('orion-gravity')">
+            <div class="orion-network-bg"></div>
+            <div class="card-header orion-header-logo-only">
+                <img src="orion_logo.png" alt="Orion Gravity" class="large-project-logo">
+            </div>
+
+            <div class="card-content">
+                <div class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tocar para leer resumen</div>
+                <div class="summary-text hidden">
+                    <p>El presente proyecto de emprendimiento tiene como propósito fundamental el desarrollo e
+                        implementación de un ecosistema de transformación digital basado en Inteligencia Artificial y
+                        automatización de procesos para optimizar la eficiencia operativa y la capacidad estratégica de
+                        las entidades de trabajo en el sector comercial del Este de Barquisimeto, Estado Lara. La
+                        iniciativa surge ante la necesidad de modernizar las estructuras administrativas venezolanas,
+                        transformando la información dispersa en activos estratégicos para la toma de decisiones en
+                        tiempo real.</p>
+                    <p>La metodología se enmarca en un enfoque cualitativo bajo el paradigma socio-crítico, empleando el
+                        método de Investigación Acción Participativa. Este proceso se desarrolló en cuatro fases:
+                        diagnóstico (mediante auditorías técnicas y el sistema de análisis masivo de datos),
+                        planificación estratégica basada en una escalera de valor, ejecución de soluciones tecnológicas
+                        y evaluación de impacto mediante indicadores de rentabilidad.</p>
+                    <p>Los resultados del diagnóstico revelaron una brecha digital crítica en la región, caracterizada
+                        por la ausencia de presencia web funcional y una saturación de procesos manuales que generan
+                        "islas de datos" e ineficiencias operativas. Se determinó una estimación de que las
+                        organizaciones pierden un promedio de diez horas semanales en la generación de reportes manuales
+                        (Orion Gravity, 2026). No obstante, el análisis de factibilidad demostró la viabilidad técnica y
+                        financiera del proyecto, con una inversión inicial reducida, un punto de equilibrio alcanzable
+                        en el primer mes de operaciones y un retorno de inversión proyectado superior al 150%.</p>
+                    <p>La reflexión final del proyecto destaca que la Inteligencia Artificial no es una herramienta de
+                        desplazamiento humano, sino un instrumento de soberanía tecnológica que dignifica el trabajo al
+                        desplazar la labor manual hacia roles de supervisión estratégica y creatividad. Orion Gravity se
+                        posiciona como un catalizador hacia la "Empresa Autónoma", donde la tecnología potencia la
+                        capacidad productiva nacional y transforma el caos informativo en sistemas de decisión
+                        eficientes y medibles.</p>
+                </div>
+
+                <div class="links-container hidden">
+                    <a class="btn" href="https://wilderescobar-pixel.github.io/Web_Orion_System/" target="_blank"
+                        onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-globe"></i> Página Web Oficial
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-chart-line"></i> Dashboard de IA (Power BI)
+                    </a>
+                </div>
+            </div>
+            <div class="glass-reflection"></div>
+        </article>
+
+        <!-- SECTION 2: PASAPALOS GOURMET -->
+        <article class="card pasapalos-gourmet" id="pasapalos-gourmet" onclick="toggleCard('pasapalos-gourmet')">
+            <div class="card-background pasapalos-bg"></div>
+            <div class="card-header">
+                <div class="logo-circle image-logo">
+                    <!-- Sube la imagen pasapalos_logo.png en la misma carpeta para que aparezca aquí -->
+                    <img src="pasapalos_logo.png" alt="Logo Pasapalos Gourmet" class="project-logo-img"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23D4AF37\'%3E%3Cpath d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\'/%3E%3C/svg%3E'">
+                </div>
+                <h3>Pasapalos Gourmet</h3>
+            </div>
+
+            <div class="card-content">
+                <button class="btn btn-velvet-summary"
+                    onclick="toggleCard('pasapalos-gourmet'); event.stopPropagation();">
+                    <i class="fa-solid fa-utensils"></i> Ver Propuesta Gastronómica
+                </button>
+                <div class="summary-text hidden">
+                    <p>El presente proyecto de emprendimiento, titulado "Pasapalos Gourmet: Mini Delicias para Disfrutar
+                        en Todo Momento", se centra en la producción y comercialización de pasapalos dulces y salados de
+                        alta calidad, tales como tequeños, mini pizzas, palmeritas y mini donas. Su propósito
+                        fundamental es generar una transformación socioeconómica en el Sector Joel Sequera de
+                        Barquisimeto, ofreciendo un menú variado que satisface las demandas de familias y organizadores
+                        de eventos locales. La iniciativa surge para resolver la carencia de servicios gastronómicos
+                        cercanos, proporcionando productos gourmet a precios accesibles y fortaleciendo el desarrollo de
+                        capacidades técnicas de los aprendices.</p>
+                    <p>La metodología se fundamenta en un enfoque cualitativo bajo el paradigma socio-crítico, empleando
+                        el método de Investigación Acción Participativa. El proceso se desarrolló en cuatro fases:
+                        diagnóstico participativo, planificación estratégica, ejecución de la producción y evaluación
+                        sistemática del impacto. Se utilizaron técnicas de recolección de información directa con
+                        líderes comunitarios y jefes de hogar para validar la viabilidad de la propuesta.</p>
+                    <p>Los resultados del diagnóstico confirmaron una carencia crítica de servicios gastronómicos
+                        cercanos, lo que obligaba a los habitantes a incurrir en gastos de traslado elevados hacia otros
+                        sectores (Pasapalos Gourmet, 2025). El análisis de mercado identificó una demanda insatisfecha
+                        por pasapalos dulces y salados, estableciendo una ventaja competitiva basada en la frescura y la
+                        puntualidad. Desde la perspectiva financiera, el proyecto demuestra viabilidad con una inversión
+                        inicial de $100, alcanzando su punto de equilibrio al vender diez bandejas, lo que garantiza la
+                        sostenibilidad económica del emprendimiento.</p>
+                    <p>En conclusión, este proyecto no se limita a una actividad comercial, sino que se constituye como
+                        un modelo pedagógico de emancipación económica. La experiencia demuestra que la combinación de
+                        excelencia culinaria y responsabilidad social permite construir redes de confianza comunitaria,
+                        cumpliendo con el marco jurídico venezolano que promueve la iniciativa popular y el derecho al
+                        trabajo productivo.</p>
+                </div>
+
+                <div class="links-container hidden">
+                    <a class="btn" href="https://instagram.com/pasapalosgourmet2026" target="_blank"
+                        onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-instagram"></i> @pasapalosgourmet2026
+                    </a>
+                    <a class="btn" href="https://tiktok.com/@darieemoz45" target="_blank"
+                        onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-tiktok"></i> @darieemoz45
+                    </a>
+                    <a class="btn" href="https://wa.me/584161212353" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-whatsapp"></i> +58 416-1212353
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-book-open"></i> Catálogo y Presentación
+                    </a>
+                </div>
+            </div>
+            <div class="glass-reflection"></div>
+        </article>
+
+        <!-- SECTION 3: DULCE BOCADO -->
+        <article class="card dulce-bocado" id="dulce-bocado" onclick="toggleCard('dulce-bocado')">
+            <div class="card-background dulce-bg"></div>
+            <div class="card-header">
+                <div class="logo-circle image-logo">
+                    <!-- Sube la imagen dulce_logo.png en la misma carpeta para que aparezca aquí -->
+                    <img src="dulce_logo.png" alt="Logo Dulce Bocado" class="project-logo-img"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23e84393\'%3E%3Cpath d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\'/%3E%3C/svg%3E'">
+                </div>
+                <h3>Dulce Bocado</h3>
+            </div>
+
+            <div class="card-content">
+                <button class="btn btn-dulce-summary" onclick="toggleCard('dulce-bocado'); event.stopPropagation();">
+                    <i class="fa-solid fa-ice-cream"></i> Dulce Resumen
+                </button>
+                <div class="summary-text hidden">
+                    <p class="placeholder-text"><em>[Resumen próximamente...]</em></p>
+                </div>
+
+                <div class="links-container hidden">
+                    <a class="btn" href="https://instagram.com/dulcebocado52026" target="_blank"
+                        onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-instagram"></i> @dulcebocado52026
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-tiktok"></i> Elaboración Artesanal
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-file-pdf"></i> Menú de Postres
+                    </a>
+                </div>
+            </div>
+            <div class="glass-reflection"></div>
+        </article>
+
+        <!-- SECTION 4: PAPELERÍA GIRASOL -->
+        <article class="card papeleria-girasol" id="papeleria-girasol" onclick="toggleCard('papeleria-girasol')">
+            <div class="card-background girasol-bg"></div>
+            <div class="card-header">
+                <div class="logo-circle image-logo">
+                    <!-- Sube la imagen girasol_logo.png en la misma carpeta para que aparezca aquí -->
+                    <img src="girasol_logo.png" alt="Logo Papelería Girasol" class="project-logo-img"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%232E8B57\'%3E%3Cpath d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z\'/%3E%3C/svg%3E'">
+                </div>
+                <h3>Papelería Girasol</h3>
+            </div>
+
+            <div class="card-content">
+                <button class="btn btn-girasol-summary"
+                    onclick="toggleCard('papeleria-girasol'); event.stopPropagation();">
+                    <i class="fa-solid fa-leaf"></i> Leer Resumen
+                </button>
+                <div class="summary-text hidden">
+                    <p class="placeholder-text"><em>[Resumen próximamente...]</em></p>
+                </div>
+
+                <div class="links-container hidden">
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-store"></i> Tienda Virtual (Próx)
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-location-dot"></i> Ubicación (Carrera 5/Julio)
+                    </a>
+                    <a class="btn" href="#" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fa-brands fa-instagram"></i> Instagram (Próx)
+                    </a>
+                </div>
+            </div>
+            <div class="glass-reflection"></div>
+        </article>
+
+    </main>
+
+    <section class="gratitude-section">
+        <div class="quote-box">
+            <p>"El Aprendiz: Un Agente de Cambio y Transformación"</p>
+        </div>
+        <div class="message-box">
+            <p>Agradecemos sinceramente su visita. Con dedicación, innovación y pasión, seguimos construyendo el futuro.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EXPO-EMPRENDE INCES. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
